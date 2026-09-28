@@ -1,0 +1,277 @@
+* {
+    overflow-x: hidden;
+}
+
+.eshop {
+    display: flex;
+}
+
+header,
+nav,
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header {
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.logo img {
+    padding-right: 30px;
+}
+
+.hero-page {
+    display: flex;
+    padding: 40px;
+}
+
+.hero-left {
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    color: rgb(78, 75, 75);
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.hero-left button {
+    color: white;
+    background-color: rgb(190, 77, 190);
+    font-size: 1.5rem;
+    padding: 30px;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+}
+
+.hero-right img {
+    animation: home ease-in-out 3s infinite alternate;
+}
+
+@keyframes home {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.arrivage {
+    display: flex;
+    align-items: center;
+}
+
+.titre {
+    display: flex;
+    gap: 10px;
+    font-size: 5rem;
+}
+
+hr {
+    background-color: rgb(190, 77, 190);
+    height: 5px;
+    width: 500px;
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 50px;
+}
+
+.panier {
+    background-color: aliceblue;
+    height: auto;
+    width: 500px;
+    position: relative;
+}
+
+.panier button {
+    color: white;
+    background-color: rgb(190, 77, 190);
+    font-size: 1.5rem;
+    padding: 30px;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+    position: absolute;
+    right: 0;
+    transform: translate(-50%, 150%);
+}
+
+.produit {
+    display: flex;
+    align-items: center;
+}
+
+.titre2 {
+    display: flex;
+    gap: 10px;
+    font-size: 5rem;
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 60px;
+    gap: 50px;
+}
+
+.t-shirt {
+    box-shadow: 1px 1px 6px 0;
+    width: 100%;
+    max-width: 460px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+.t-shirt img {
+    padding: 30px;
+}
+
+h6 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.btn img {
+    background-color: rgb(190, 77, 190);
+    border-top-left-radius: 40px;
+    transform: translateX(330%);
+}
+
+.card3 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.photo {
+    box-shadow: 1px 1px 6px 0;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-bottom: 3px solid rgb(190, 77, 190);
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+.logo1 img {
+    background-color: rgb(190, 77, 190);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+footer ul {
+    color: rgb(170, 77, 170);
+    font-size: 1.5rem;
+}
+
+h7 {
+    font-size: 2rem;
+    padding-left: 40px;
+    color: white;
+}
+
+@media(max-width: 750px) {
+    nav {
+        display: none;
+    }
+
+    .hero-page {
+        flex-direction: column-reverse;
+    }
+
+    .hero-right img {
+        animation: home ease-in-out 3s infinite alternate;
+        transform: translateX(-30%);
+    }
+
+    @keyframes home {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-20);
+        }
+    }
+
+    h2,
+    h3 {
+        font-size: 3rem;
+    }
+    .titre{
+        font-size: 2rem;
+    }
+    hr{
+        width: 90px;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .titre2{
+        font-size: 3rem;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .t-shirt img{
+        padding: 5px;
+        padding-right: 10px;
+    }
+    .btn{
+        transform: translateX(20%);
+
+    }
+    .btn img{
+        padding: 10px;
+    }
+    .card3{
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
